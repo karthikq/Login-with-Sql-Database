@@ -1,0 +1,281 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Vibur&display=swap");
+@import url("./hover-min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow-y: hidden;
+}
+.container-2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 200;
+  background: url("https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260s")
+    no-repeat center;
+  background-size: cover;
+}
+.container-2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.479);
+  content: "";
+  z-index: -1;
+}
+.container-2 h3 {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  padding-top: 8rem;
+  font-size: 2.2rem;
+  color: #ffffff;
+
+  font-weight: lighter;
+}
+.container p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+.container button {
+  padding: 0.8rem 1rem;
+}
+.container button a {
+  text-decoration: none;
+  color: white;
+  padding: 0.6rem;
+}
+.alert {
+  width: 100%;
+  padding: 0.3rem;
+  margin: 0.1rem;
+  background-color: #da584e;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.login-details {
+  width: 50%;
+  height: 100vh;
+  background: url("../images/bg.svg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+
+  font-size: 2rem;
+  color: #6b6b6b;
+}
+.form-elements {
+  font-family: "Mulish", sans-serif;
+
+  width: 20rem;
+
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 0 0.5rem;
+  flex-direction: column;
+  margin: 2rem auto;
+  text-align: left;
+}
+label {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: rgba(71, 71, 71, 0.904);
+}
+
+.inp,
+.pass {
+  font-family: "Mulish", sans-serif;
+  width: 100%;
+  height: 1rem;
+  padding: 1rem 0 1rem 0.5rem;
+  border: none;
+  outline: none;
+  margin: 0.5rem auto 1rem;
+  border-radius: 4px;
+  transition: all 0.5s;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.075);
+}
+.inp:focus {
+  width: 18rem;
+}
+.pass:focus {
+  width: 18rem;
+}
+button {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1.2px;
+
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 2rem auto;
+  min-width: 7rem;
+  padding: 1rem 1.2rem;
+  border: none;
+  background-color: #7b7b7b;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+p {
+  text-align: center;
+  font-weight: 300;
+}
+.images {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(50, 54, 58);
+  display: block;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* btn effects */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.drop-down {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.drop-down input {
+  display: none;
+}
+.drop-down #countries,
+#states {
+  display: block;
+  width: 20rem;
+  padding: 0.4rem;
+  height: 2.5rem;
+  margin: 0.5rem 1rem;
+  border: 2px solid rgba(252, 252, 252, 0.87);
+  outline: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.877);
+}
+option {
+  color: black;
+}
+.drop-down-2 #states {
+  margin: 0.8rem auto 0;
+}
+.drop-down-2 button {
+  background-color: lightblue;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.8rem;
+
+  color: white;
+}
+.travel-loc {
+  margin-top: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  color: rgb(255, 255, 255);
+}
+.btn-2 {
+  padding: 0.3rem 0.8rem;
+  background: rgb(56, 56, 56);
+  width: 5rem;
+  margin: 0 auto;
+}
+.btn-2 a {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  color: rgb(243, 243, 243);
+}
+@media screen and (max-width: 762px) {
+  .images {
+    display: none;
+  }
+  .login-details {
+    width: 100%;
+  }
+  .login-details p {
+    margin-top: 0.1rem;
+  }
+  .container h3 {
+    font-size: 1.6rem;
+  }
+  .login-details h2 {
+    padding-top: 6rem;
+  }
+  .form-elements {
+    padding-top: 1.4rem;
+    width: 90%;
+  }
+  .form-elements button {
+    margin-bottom: 0.8rem;
+  }
+  .container-2 h3 {
+    font-size: 1.8rem;
+  }
+}

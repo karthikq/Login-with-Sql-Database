@@ -1,0 +1,54 @@
+<!-- @format -->
+
+<%- include('./partials/header.ejs'); -%>
+  <div class="container-2">
+    <h3> Select your Destination
+    </h3>
+    <!-- <p>You have successfully Logged in</p>
+    <button><a href="/logout">Logout</a></button> -->
+
+    <div class="drop-down">
+
+      <form action="/country" method="POST">
+        <select name="countries" id="countries" onchange="this.form.submit()">
+          <%countriesArray.map((country)=>{%>
+
+            <option value="<%=country.code%>">
+              <%=country.name%>
+            </option>
+
+            <% }) %>
+
+        </select>
+      </form>
+    </div>
+    <div class="drop-down-2">
+      <form action="/state" method="POST">
+        <select name="state" id="states">
+          <%state.map((state)=>{%>
+            <option value=" <%=state%>">
+              <%=state%>
+            </option>
+            <% }) %>
+        </select>
+        <button type="submit">book</button>
+      </form>
+
+      <% if( typeof stateName !="undefined" ){ %>
+        <span class="travel-loc"> Your ticket has been booked to 🎴 <%=stateName[0]%>
+        </span>
+        <h4 class="btn-2"> <a href="/logout">logout </a> </h4>
+        <% } %>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <%- include('./partials/footer.ejs'); -%>

@@ -1,0 +1,32 @@
+<!-- @format -->
+<%- include('./partials/header.ejs'); -%>
+
+  <div class="container">
+    <div class="main-page">
+      <div class="login-details">
+        <h2>Travel Booker</h2>
+
+        <form class="form-elements" action="/" method="post">
+          <%- include('./partials/messages.ejs') -%>
+            <label> Email </label>
+            <input type="text" name="username" class="inp" placeholder="Email" />
+            <label for="">password</label>
+            <input type="password" class="pass" placeholder="Enter password" name="date" />
+
+
+
+            <button onclick="mu" type="submit">login</button>
+            <p>If you don't have an account?
+              <a href="/register">Register</a>
+            </p>
+
+
+        </form>
+      </div>
+
+      <%- include('./partials/slider.ejs'); -%>
+    </div>
+  </div>
+
+
+  <%- include('./partials/footer.ejs'); -%>
