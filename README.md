@@ -2,7 +2,7 @@
 This website is created using Node JS and MySql has the Database.Since mySql hosting is not free .I have not hosted it.
 
 # NPM module 
-Express : to create a node JS server.
+Express : to create a node JS server .
 Dotenv : to unpublish nodemodules and secrect key.
 Bcrypt: to hash password.
 Ejs : To handle multiple Html pages.
