@@ -2,11 +2,11 @@
 This website is created using Node JS and MySql has the Database.Since mySql hosting is not free .I have not hosted it.
 
 # NPM module 
-express : to create a node JS server.
-dotenv : to unpublish nodemodules and secrect key.
-bcrypt: to hash password.
-ejs : To handle multiple Html pages.
-country-state-picker:fetch countries as well as corresponding states.
+Express : to create a node JS server.
+Dotenv : to unpublish nodemodules and secrect key.
+Bcrypt: to hash password.
+Ejs : To handle multiple Html pages.
+Country-state-picker:fetch countries as well as corresponding states.
 
 
 Login page
